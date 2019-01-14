@@ -9,7 +9,21 @@ node_js:
   - 'lts/*'
   - '7'
   - '8'
-
+cache:
+  directories:
+    - ~/.npm
+node_js:
+  - '9'
+git:
+  depth: 3
 script:
-  - npm install
-  - npm run lint
+  - yarn build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  keep-history: true
+  github-token: $GITHUB_TOKEN
+  local-dir: public
+  target-branch: master
+  on:
+branch: develop
