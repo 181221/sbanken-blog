@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/sbanken-blog`,
   siteMetadata: {
     title: `Sbanken praksis blog`,
     author: `Peder Wiig Aalen`,
@@ -59,7 +60,7 @@ module.exports = {
       options: {
         name: `Gatsby Starter Blog`,
         short_name: `GatsbyJS`,
-        start_url: `/`,
+        start_url: `/sbanken-blog`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,

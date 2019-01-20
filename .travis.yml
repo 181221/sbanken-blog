@@ -1,29 +1,22 @@
 language: node_js
-
-os:
-  - linux
-  - osx
-
 node_js:
-  - 'node'
-  - 'lts/*'
-  - '7'
-  - '8'
+  - 'stable'
 cache:
+  yarn: true
   directories:
-    - ~/.npm
-node_js:
-  - '9'
-git:
-  depth: 3
-script:
-  - yarn build
+    - node_modules
 deploy:
   provider: pages
   skip-cleanup: true
-  keep-history: true
   github-token: $GITHUB_TOKEN
-  local-dir: public
-  target-branch: master
+  local_dir: public
+  keep-history: true
   on:
-branch: develop
+    branch: master
+before_script:
+  - 'yarn global add gatsby'
+  - 'yarn install'
+script:
+  - 'yarn run test'
+after_success:
+  - 'yarn run deploy'
