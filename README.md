@@ -1,4 +1,5 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+[![Build Status](https://travis-ci.com/181221/sbanken-blog.svg?branch=develop)](https://travis-ci.com/181221/sbanken-blog)
 <p align="center">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
