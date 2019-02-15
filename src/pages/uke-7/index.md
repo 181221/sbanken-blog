@@ -1,5 +1,5 @@
 ---
-title: Uke 6 – Utfordringer
+title: Uke 7 – Utfordringer
 date: '2019-02-15'
 ---
 
